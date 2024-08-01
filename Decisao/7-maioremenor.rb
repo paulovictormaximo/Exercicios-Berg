@@ -7,6 +7,23 @@ n2 = gets.chomp
 puts "Insira o terceiro número"
 n3 = gets.chomp
 
-if n1 > n2 && n1 > n3 && n2 > n3
-  puts "O maior número é o #{n1} e menor é o #{n3}"
+maior = n1
+menor = n1
+
+if n2 > maior
+  maior = n2
 end
+
+if n3 > maior
+  maior = n3
+end
+
+if n2 < menor
+  menor = n2
+end
+
+if n3 < menor
+  menor = n3
+end
+
+puts "O maior número é o #{maior} e o menor número é o #{menor}"
